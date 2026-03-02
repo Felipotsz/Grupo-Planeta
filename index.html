@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Grupo Planeta Ferramentas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="../products/products.css">
+    <link rel="stylesheet" href="../home/home.css">
+
+    <!-- JavaScript -->
+    <script src="index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="../products/products.js" defer></script>
+    <script src="../home/brands.js" defer></script>
+    <script src="../home/home.js" defer></script>
+    <script src="../home/gallery.js" defer></script>
+
+    <!-- Menu de Acessibilidade -->
+    <link rel="stylesheet" href="../accessibility/accessibility.css">
+    <script src="../accessibility/accessibility.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="root">
+        <!-- Redes Sociais Flutuantes -->
+        <div class="social-floating">
+            <a href="https://facebook.com/gpplaneta" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/gpplaneta" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/gpplaneta" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://linkedin.com/company/gpplaneta" target="_blank" aria-label="LinkedIn"
+                rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Layout Principal -->
+        <div class="layout">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="header-container">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html" class="logo-link">
+                                <img src="src/img/logo.png" alt="Grupo Planeta Ferramentas" class="logo-img">
+                                <div class="logo-text">GRUPO <span>PLANETA</span></div>
+                            </a>
+                        </div>
+
+                        <!-- Menu Mobile Button - CORRIGIDO: ID = menuToggle -->
+                        <button class="mobile-menu-btn" id="menuToggle" aria-label="Menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Navegação Principal -->
+                        <nav class="nav" id="mainNav">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+
+                                <!-- Dropdown de Sobre Nós -->
+                                <li class="nav-item dropdown active">
+                                    <a href="#" class="nav-link">
+                                        Sobre Nós
+                                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                                <i class="fas fa-users"></i>Quem Somos?
+                                            </a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Dropdown de Produtos -->
+                                <li class="nav-item dropdown">
+                                    <a href="#produtos" class="nav-link">
+                                        Produtos
+                                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="produtos/ferramentas-manuais.html" class="dropdown-item">
+                                                <i class="fas fa-tools"></i>
+                                                Ferramentas Manuais
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="produtos/ferramentas-eletricas.html" class="dropdown-item">
+                                                <i class="fas fa-bolt"></i>
+                                                Ferramentas Elétricas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="produtos/epis.html" class="dropdown-item">
+                                                <i class="fas fa-hard-hat"></i>
+                                                EPIs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="produtos/equipamentos.html" class="dropdown-item">
+                                                <i class="fas fa-robot"></i>
+                                                Equipamentos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="pages/brands.html" class="nav-link">Marcas</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="pages/contact.html" class="nav-link">Contato</a>
+                                </li>
+                            </ul>
+
+                            <!-- Ações mobile - DENTRO do nav (CORRETO) -->
+                            <div class="nav-actions-mobile">
+                                <button class="theme-toggle" id="themeToggleMobile">
+                                    <span class="toggle-slider">
+                                        <i class="fas fa-sun"></i>
+                                    </span>
+                                </button>
+
+                                <a href="pages/contact.html" class="btn btn-small nav-involve-btn">
+                                    <i class="fas fa-headset"></i>
+                                    Fale Conosco
+                                </a>
+                            </div>
+                        </nav>
+
+                        <!-- Ações desktop - FORA do nav -->
+                        <div class="nav-actions-desktop">
+                            <button class="theme-toggle" id="themeToggleDesktop">
+                                <span class="toggle-slider">
+                                    <i class="fas fa-sun"></i>
+                                </span>
+                            </button>
+
+                            <a href="pages/contact.html" class="btn btn-small nav-involve-btn">
+                                <i class="fas fa-headset"></i>
+                                Fale Conosco
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- Seção Hero/Banner -->
+                <section class="hero" id="home" style="background-image: url('src/img/banner-home.gif');">
+                    <div class="container">
+                        <h1>Ferramentas profissionais para todos os desafios</h1>
+                        <p>Há mais de 15 anos oferecendo as melhores soluções em ferramentas manuais, elétricas e
+                            equipamentos
+                            de segurança para o seu trabalho.</p>
+                        <a href="produtos.html" class="btn">Conheça nossos produtos</a>
+                    </div>
+                </section>
+
+                <!-- ===== SOBRE NÓS ===== -->
+                <section class="about" aria-labelledby="about-title">
+                    <div class="container">
+                        <h2 id="about-title" class="section-title">Sobre o Grupo Planeta Ferramentas</h2>
+                        <div class="about-content">
+                            <div class="about-text">
+                                <p class="about-paragraph">
+                                    <strong>Nossa loja física do Grupo Planeta</strong> é um verdadeiro paraíso para
+                                    profissionais
+                                    e entusiastas de ferramentas e equipamentos de segurança. Com mais de <strong>15
+                                        anos de
+                                        experiência</strong>,
+                                    oferecemos uma vasta gama de produtos das melhores marcas do mercado.
+                                </p>
+                                <p class="about-paragraph">
+                                    Nosso catálogo abrange desde <strong>ferramentas manuais e elétricas</strong> até
+                                    <strong>equipamentos de proteção individual (EPIs)</strong> completos, incluindo
+                                    capacetes,
+                                    óculos de segurança, luvas e calçados certificados. Tudo para garantir a segurança e
+                                    o
+                                    conforto dos nossos clientes em qualquer tipo de atividade.
+                                </p>
+                                <p class="about-paragraph">
+                                    Contamos com uma equipe de <strong>profissionais especializados</strong> prontos
+                                    para
+                                    oferecer
+                                    consultoria técnica e ajudar você a escolher a ferramenta certa para o seu projeto.
+                                </p>
+                                <div class="about-btn-container">
+                                    <a href="sobre-nos.html" class="btn about-btn"
+                                        aria-label="Conheça mais sobre nossa história">
+                                        Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="about-image-container">
+                                <div class="about-image">
+                                    <img src="src/img/gp-store.jpeg"
+                                        alt="Interior da loja Grupo Planeta Ferramentas com exposição organizada de produtos"
+                                        loading="lazy">
+                                </div>
+
+                                <!-- Informações de Localização -->
+                                <div class="about-location-info">
+                                    <div class="location-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>
+                                            <strong>Loja Física:</strong> R. Benedito Faustino da Rosa, 500 - Jardim
+                                            Wanderley<br>
+                                            Tatuí - SP, 18277-430
+                                        </span>
+                                    </div>
+                                    <div class="location-divider"></div>
+                                    <div class="location-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>
+                                            <strong>Horário de Funcionamento:</strong><br>
+                                            Segunda a Sexta: 8h às 18h<br>
+                                            Sábados: 8h às 12h
+                                        </span>
+                                    </div>
+                                    <div class="location-divider"></div>
+                                    <div class="location-item">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>
+                                            <strong>Telefone/WhatsApp:</strong> (15) 3324-9000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ===== MARCAS QUE TRABALHAMOS ===== -->
+                <section class="brands" aria-label="Marcas parceiras">
+                    <div class="container">
+                        <h2 class="section-title">Marcas que Trabalhamos</h2>
+
+                        <!-- Controles do Carrossel -->
+                        <div class="brands-carousel-container">
+                            <button class="carousel-arrow prev-arrow" aria-label="Ver marcas anteriores">
+                                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                            </button>
+
+                            <div class="brands-carousel" id="brandsCarousel">
+                                <!-- As marcas serão inseridas via JavaScript -->
+                            </div>
+
+                            <button class="carousel-arrow next-arrow" aria-label="Ver próximas marcas">
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <!-- Indicadores do Carrossel -->
+                        <div class="carousel-indicators" id="carouselIndicators"></div>
+                    </div>
+                </section>
+
+                <!-- ===== SEGMENTOS DE ATUAÇÃO ===== -->
+                <section class="segments-section" aria-labelledby="segments-title">
+                    <div class="container">
+                        <div class="segments-header">
+                            <h2 id="segments-title" class="segments-title">Segmentos de Atuação</h2>
+                            <p class="segments-subtitle">Soluções especializadas para os mais diversos setores da
+                                indústria</p>
+                            <span class="expertise-badge">Nossa Expertise</span>
+                        </div>
+
+                        <!-- Spotlight -->
+                        <div class="spotlight-card">
+                            <div class="spotlight-content">
+                                <span class="spotlight-label">DESTAQUE</span>
+                                <h3 class="spotlight-title">Soluções Industriais</h3>
+                                <p class="spotlight-text">Fornecemos ferramentas e equipamentos de alta performance para
+                                    os segmentos mais exigentes do mercado.</p>
+
+                                <div class="stats-grid">
+                                    <div class="stat-item">
+                                        <span class="stat-number">18+</span>
+                                        <span class="stat-label">Anos de experiência</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">500+</span>
+                                        <span class="stat-label">Clientes ativos</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">14+</span>
+                                        <span class="stat-label">Marcas parceiras</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VISUAL GRID -->
+                            <div class="spotlight-images">
+                                <div class="spotlight-img-container">
+                                    <img src="https://www.rovaris.ind.br/userfiles/cache/images/5aa01cc164b89335f9a456ee3d871b726336b106-960x0.jpg"
+                                        alt="Indústria Metalúrgica" class="spotlight-img" loading="lazy">
+                                    <span class="spotlight-img-label">Metalúrgica</span>
+                                </div>
+                                <div class="spotlight-img-container">
+                                    <img src="https://marketplace.canva.com/86OdM/MAFWqv86OdM/1/tl/canva-civil-construction-worker-MAFWqv86OdM.jpg"
+                                        alt="Construção Civil" class="spotlight-img" loading="lazy">
+                                    <span class="spotlight-img-label">Construção</span>
+                                </div>
+                                <div class="spotlight-img-container">
+                                    <img src="https://portalhospitaisbrasil.com.br/wp-content/uploads/2022/08/foto-50.jpg"
+                                        alt="Rede Hospitalar" class="spotlight-img" loading="lazy">
+                                    <span class="spotlight-img-label">Hospitalar</span>
+                                </div>
+                                <div class="spotlight-img-container">
+                                    <img src="https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1gpgnq1.jpg"
+                                        alt="Agronegócio" class="spotlight-img" loading="lazy">
+                                    <span class="spotlight-img-label">Agronegócio</span>
+                                </div>
+                                <div class="spotlight-img-container">
+                                    <img src="https://www.tradimaq.com.br/wp-content/uploads/2024/12/DSC061632-scaled.webp"
+                                        alt="Agronegócio" class="spotlight-img" loading="lazy">
+                                    <span class="spotlight-img-label">Mineração</span>
+                                </div>
+                                <div class="spotlight-img-container">
+                                    <img src="https://abolbrasil.org.br/wordpress/wp-content/uploads/2022/02/20211007_nota04-1-.jpg"
+                                        alt="Agronegócio" class="spotlight-img" loading="lazy">
+                                    <span class="spotlight-img-label">Automotivo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grid de Segmentos -->
+                        <div class="segments-grid">
+                            <!-- Indústria Metalúrgica -->
+                            <article class="segment-card" tabindex="0">
+                                <div class="card-header">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <h3 class="card-title">Indústria Metalúrgica</h3>
+                                </div>
+
+                                <div class="card-content">
+                                    <ul class="segment-list">
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Setor Automotivo</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Energia</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Mineração</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-footer">
+                                    <span class="card-link">Explorar soluções</span>
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </article>
+
+                            <!-- Construção Civil -->
+                            <article class="segment-card" tabindex="0">
+                                <div class="card-header">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <i class="fas fa-hard-hat"></i>
+                                    </div>
+                                    <h3 class="card-title">Construção Civil</h3>
+                                </div>
+
+                                <div class="card-content">
+                                    <ul class="segment-list">
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Obras residenciais</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Obras comerciais</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Infraestrutura</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-footer">
+                                    <span class="card-link">Explorar soluções</span>
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </article>
+
+                            <!-- Rede Hospitalar -->
+                            <article class="segment-card" tabindex="0">
+                                <div class="card-header">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <i class="fas fa-hospital"></i>
+                                    </div>
+                                    <h3 class="card-title">Rede Hospitalar</h3>
+                                </div>
+
+                                <div class="card-content">
+                                    <ul class="segment-list">
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Equipamentos médicos</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Manutenção hospitalar</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>EPIs especializados</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-footer">
+                                    <span class="card-link">Explorar soluções</span>
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </article>
+
+                            <!-- Agronegócio -->
+                            <article class="segment-card" tabindex="0">
+                                <div class="card-header">
+                                    <div class="card-icon" aria-hidden="true">
+                                        <i class="fas fa-tractor"></i>
+                                    </div>
+                                    <h3 class="card-title">Agronegócio</h3>
+                                </div>
+
+                                <div class="card-content">
+                                    <ul class="segment-list">
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Maquinário agrícola</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Implementos</span>
+                                        </li>
+                                        <li class="segment-item">
+                                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                            <span>Manutenção de frotas</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-footer">
+                                    <span class="card-link">Explorar soluções</span>
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- CTA Section -->
+                        <div class="segments-cta">
+                            <div class="cta-content">
+                                <h3>Não encontrou seu segmento?</h3>
+                                <p>Fale com nossa equipe para soluções personalizadas</p>
+                            </div>
+                            <a href="/contato" class="btn cta-button">
+                                Falar com especialista
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ===== PRODUTOS EM DESTAQUE ===== -->
+                <section class="featured-products" aria-labelledby="products-title">
+                    <div class="container">
+                        <h2 id="products-title" class="section-title">Produtos em Destaque</h2>
+                        <div class="products-grid" id="productsGrid">
+                            <!-- Os produtos serão inseridos dinamicamente via JavaScript -->
+                        </div>
+                        <!-- O botão "Ver Mais" será inserido dinamicamente -->
+                    </div>
+                </section>
+
+                <!-- ===== DIFERENCIAIS ===== -->
+                <section class="highlights" aria-labelledby="highlights-title">
+                    <div class="container">
+                        <h2 id="highlights-title" class="section-title">Por que escolher a Planeta?</h2>
+                        <div class="highlights-grid">
+                            <div class="highlight-card" tabindex="0">
+                                <i class="fas fa-truck" aria-hidden="true"></i>
+                                <h3>Entrega Rápida</h3>
+                                <p>Entregamos em toda região metropolitana com agilidade, segurança e pontualidade.</p>
+                            </div>
+                            <div class="highlight-card" tabindex="0">
+                                <i class="fas fa-helmet-safety" aria-hidden="true"></i>
+                                <h3>EPIs Certificados</h3>
+                                <p>Todos os equipamentos de segurança possuem certificação CA e garantem sua proteção no
+                                    trabalho.</p>
+                            </div>
+                            <div class="highlight-card" tabindex="0">
+                                <i class="fas fa-headset" aria-hidden="true"></i>
+                                <h3>Consultoria Especializada</h3>
+                                <p>Nossa equipe técnica está pronta para ajudar você a escolher a ferramenta ideal para
+                                    cada
+                                    desafio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- ===== PLANETA CONEXÃO ===== -->
+            <section class="moments-gallery">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Planeta Conexão</h2>
+                        <p class="section-subtitle">Algumas das muitas histórias que construímos juntos</p>
+                    </div>
+
+                    <div class="gallery-section">
+                        <!-- Botões de navegação -->
+                        <button class="gallery-nav prev" id="galleryPrev" aria-label="Imagem anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-nav next" id="galleryNext" aria-label="Próxima imagem">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Container do slider -->
+                        <div class="gallery-slider-container">
+                            <div class="gallery-slider" id="gallerySlider"></div>
+                        </div>
+
+                        <!-- Dots serão inseridos aqui via JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== VEM SER GP ===== -->
+            <section class="vem-ser-gp" aria-labelledby="vem-ser-title">
+                <div class="container">
+                    <div class="vem-ser-header">
+                        <h2 id="vem-ser-title" class="vem-ser-title">Vem ser <span>GP</span></h2>
+                        <p class="vem-ser-subtitle">Faça parte do time que constrói o futuro.</p>
+                    </div>
+
+                    <div class="vem-ser-grid">
+                        <!-- Card 1: Ambiente Profissional -->
+                        <article class="vem-ser-card" tabindex="0">
+                            <div class="card-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <h3>Ambiente Profissional</h3>
+                            <p>Trabalhe em um espaço seguro, organizado e com as melhores ferramentas para você crescer.
+                            </p>
+                        </article>
+
+                        <!-- Card 2: Desenvolvimento -->
+                        <article class="vem-ser-card" tabindex="0">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Desenvolvimento</h3>
+                            <p>Oferecemos treinamentos e oportunidades para você evoluir tecnicamente e
+                                profissionalmente.</p>
+                        </article>
+
+                        <!-- Card 3: Inovação -->
+                        <article class="vem-ser-card" tabindex="0">
+                            <div class="card-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Inovação</h3>
+                            <p>Valorizamos ideias novas e estamos sempre em busca de soluções inovadoras para o mercado.
+                            </p>
+                        </article>
+
+                        <!-- Card 4: Time Unido -->
+                        <article class="vem-ser-card" tabindex="0">
+                            <div class="card-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Time Unido</h3>
+                            <p>Faça parte de um time colaborativo, onde o respeito e a parceria são a base do nosso
+                                sucesso.</p>
+                        </article>
+                    </div>
+
+                    <div class="vem-ser-media">
+                        <div class="video-wrapper">
+                            <video controls poster="src/img/gp-store.jpeg" poster="src/img/capa-do-video.jpg"
+                                preload="metadata" playsinline>
+                                <source src="src/img/vem-ser-gp.mp4" type="video/mp4">
+                                <source src="src/img/vem-ser-gp.mp4" type="video/webm">
+
+                                <!-- Mensagem de fallback -->
+                                <p>
+                                    Seu navegador não suporta vídeos HTML5.
+                                    <a href="src/img/vem-ser-gp.mp4">Clique aqui para baixar o vídeo</a>.
+                                </p>
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="vem-ser-cta">
+                        <a href="pages/contact.html" class="btn btn-large vem-ser-btn">
+                            Quero fazer parte
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== VENHA NOS VISITAR ===== -->
+            <section class="visit-section" aria-labelledby="visit-title">
+                <div class="container">
+                    <div class="visit-header">
+                        <h2 id="visit-title" class="visit-title">Venha nos <span>Visitar</span></h2>
+                        <p class="visit-subtitle">Conheça nossa loja física e descubra um universo de ferramentas e
+                            soluções para o seu trabalho.</p>
+                    </div>
+
+                    <div class="visit-content">
+                        <!-- Coluna da Esquerda: Informações -->
+                        <div class="visit-info">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Localização</h3>
+                                    <p>R. Benedito Faustino da Rosa, 500 - Jardim Wanderley<br>Tatuí - SP, 18277-430</p>
+                                    <a href="https://maps.google.com/?q=R.+Benedito+Faustino+da+Rosa,+500+Jardim+Wanderley+Tatuí+SP"
+                                        target="_blank" rel="noopener noreferrer" class="info-link">
+                                        <i class="fas fa-directions"></i>
+                                        Abrir no Google Maps
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Horário de Funcionamento</h3>
+                                    <ul class="hours-list">
+                                        <li>
+                                            <span>Segunda a Sexta:</span>
+                                            <strong>8h às 18h</strong>
+                                        </li>
+                                        <li>
+                                            <span>Sábados:</span>
+                                            <strong>8h às 12h</strong>
+                                        </li>
+                                        <li>
+                                            <span>Domingos e Feriados:</span>
+                                            <strong>Fechado</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Contato</h3>
+                                    <p>
+                                        <strong>Telefone/WhatsApp:</strong><br>
+                                        <a href="tel:+151533249000" class="phone-link">(15) 3324-9000</a>
+                                    </p>
+                                    <p>
+                                        <strong>E-mail:</strong><br>
+                                        <a href="mailto:contato@gpplaneta.com.br"
+                                            class="email-link">contato@gpplaneta.com.br</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Atendimento Especializado</h3>
+                                    <p>Nossa equipe de profissionais está pronta para oferecer consultoria técnica e
+                                        ajudar você a escolher a ferramenta certa para o seu projeto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coluna da Direita: Mapa e Imagem da Loja -->
+                        <div class="visit-map">
+                            <div class="map-container">
+                                <!-- Substitua o src do iframe pelo embed do Google Maps do seu endereço -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.123456789012!2d-47.739876!3d-23.355678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f123456789ab%3A0x123456789abcdef!2sR.%20Benedito%20Faustino%20da%20Rosa%2C%20500%20-%20Jardim%20Wanderley%2C%20Tatu%C3%AD%20-%20SP%2C%2018277-430!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Mapa da localização do Grupo Planeta Ferramentas">
+                                </iframe>
+                            </div>
+
+                            <!-- Imagem da fachada/loja (opcional) -->
+                            <div class="store-image">
+                                <img src="src/img/gp-store.jpeg" alt="Fachada da loja Grupo Planeta Ferramentas"
+                                    loading="lazy">
+                                <div class="image-caption">
+                                    <i class="fas fa-store"></i>
+                                    <span>Nossa loja física em Tatuí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== FOOTER ===== -->
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-col">
+                            <div class="footer-logo">
+                                <img src="src/img/logo.png" alt="Grupo Planeta Ferramentas" class="logo-img">
+                            </div>
+                            <div class="logo-text">GRUPO PLANETA <span>FERRAMENTAS</span></div>
+                            <p>Seu parceiro em ferramentas e equipamentos de segurança desde 2008.</p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; <span id="currentYear"></span> Grupo Planeta Ferramentas. Todos os direitos
+                            reservados.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Sistema de Acessibilidade -->
+            <link rel="stylesheet" href="accessibility/accessibility.css">
+            <script src="accessibility/accessibility.js" defer></script>
+
+            <!-- Botão de Acessibilidade -->
+            <button id="accessibility-toggle" class="accessibility-toggle"
+                aria-label="Abrir painel de configurações de acessibilidade" aria-expanded="false"
+                aria-controls="accessibility-panel">
+                <i class="fas fa-universal-access" aria-hidden="true"></i>
+                <span class="sr-only">Acessibilidade</span>
+            </button>
+
+            <!-- Painel de Acessibilidade -->
+            <aside id="accessibility-panel" class="accessibility-panel"
+                aria-label="Painel de Configurações de Acessibilidade" aria-hidden="true" role="dialog">
+
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        <h2>Acessibilidade</h2>
+                    </div>
+                    <button id="close-panel" class="close-panel" aria-label="Fechar painel">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="panel-content">
+                    <!-- Seção: Tamanho da Fonte -->
+                    <section class="accessibility-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-font" aria-hidden="true"></i>
+                            Tamanho da Fonte
+                        </h3>
+                        <div class="font-controls">
+                            <button id="decrease-font" class="accessibility-btn" aria-label="Diminuir fonte">
+                                <i class="fas fa-minus"></i><span>A-</span>
+                            </button>
+                            <div class="font-display" id="current-font-size">100%</div>
+                            <button id="increase-font" class="accessibility-btn" aria-label="Aumentar fonte">
+                                <i class="fas fa-plus"></i><span>A+</span>
+                            </button>
+                            <button id="reset-font" class="accessibility-btn reset-btn">
+                                <i class="fas fa-undo"></i><span>Padrão</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Seção: Contraste -->
+                    <section class="accessibility-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-adjust"></i>
+                            Contraste
+                        </h3>
+                        <button id="toggle-contrast" class="accessibility-btn contrast-btn" aria-pressed="false">
+                            <i class="fas fa-circle"></i><span>Alto Contraste</span>
+                        </button>
+                    </section>
+
+                    <!-- Seção: Modo de Visão -->
+                    <section class="accessibility-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-eye"></i>
+                            Modo de Visão
+                        </h3>
+                        <div class="vision-buttons">
+                            <button id="colorblind-mode" class="accessibility-btn vision-btn" aria-pressed="false">
+                                <i class="fas fa-eye"></i><span>Visão Normal</span>
+                            </button>
+                            <button id="reduced-motion" class="accessibility-btn vision-btn" aria-pressed="false">
+                                <i class="fas fa-running"></i><span>Reduzir Animações</span>
+                            </button>
+                        </div>
+                        <div class="vision-info"
+                            style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-light);">
+                            <small>Clique para alternar entre modos: Normal → Deuteranopia → Protanopia → Tritanopia →
+                                Acromatopsia</small>
+                        </div>
+                    </section>
+
+                    <!-- Seção: Leitura -->
+                    <section class="accessibility-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-book-reader"></i>
+                            Leitura
+                        </h3>
+                        <button id="highlight-links" class="accessibility-btn" aria-pressed="false">
+                            <i class="fas fa-link"></i><span>Destacar Links</span>
+                        </button>
+                    </section>
+
+                    <!-- Seção: Navegação -->
+                    <section class="accessibility-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-mouse-pointer"></i>
+                            Navegação
+                        </h3>
+                        <button id="focus-helper" class="accessibility-btn" aria-pressed="false">
+                            <i class="fas fa-crosshairs"></i><span>Foco Aumentado</span>
+                        </button>
+                    </section>
+
+                    <!-- Seção: Ajuda -->
+                    <section class="accessibility-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-life-ring"></i>
+                            Ajuda
+                        </h3>
+                        <button id="keyboard-shortcuts" class="accessibility-btn">
+                            <i class="fas fa-keyboard"></i><span>Atalhos</span>
+                        </button>
+                        <button id="reset-all" class="accessibility-btn reset-all-btn">
+                            <i class="fas fa-redo"></i><span>Restaurar Padrões</span>
+                        </button>
+                    </section>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="status-indicator">
+                        <i class="fas fa-check-circle"></i>
+                        <span id="status-message">Configurações aplicadas</span>
+                    </div>
+                    <div class="panel-info">
+                        <small>Configurações salvas automaticamente</small>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Overlay do Painel -->
+            <div id="panel-overlay" class="panel-overlay" aria-hidden="true"></div>
+
+            <!-- Modal de Atalhos -->
+            <div id="shortcuts-modal" class="accessibility-modal" aria-hidden="true" role="dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Atalhos de Teclado</h3>
+                        <button id="close-shortcuts" class="close-modal" aria-label="Fechar">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="shortcuts-list">
+                            <div class="shortcut-item"><kbd>Alt</kbd> + <kbd>A</kbd> <span>Abrir/Fechar painel</span>
+                            </div>
+                            <div class="shortcut-item"><kbd>Alt</kbd> + <kbd>+</kbd> <span>Aumentar fonte</span></div>
+                            <div class="shortcut-item"><kbd>Alt</kbd> + <kbd>-</kbd> <span>Diminuir fonte</span></div>
+                            <div class="shortcut-item"><kbd>Alt</kbd> + <kbd>C</kbd> <span>Alto contraste</span></div>
+                            <div class="shortcut-item"><kbd>Alt</kbd> + <kbd>D</kbd> <span>Modo daltônico</span></div>
+                            <div class="shortcut-item"><kbd>Alt</kbd> + <kbd>R</kbd> <span>Reduzir animações</span>
+                            </div>
+                            <div class="shortcut-item"><kbd>Tab</kbd> <span>Navegar entre elementos</span></div>
+                            <div class="shortcut-item"><kbd>Esc</kbd> <span>Fechar painéis</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
